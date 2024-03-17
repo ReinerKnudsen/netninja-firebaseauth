@@ -13,6 +13,14 @@ I realized too
 - All my code went into a 'firebase.js'rather than a 'auth.js' - don't ask me why.
 - To meet new JavaScript requirements I chose a module approach. You will find 'import' and 'export' functions which you didn't see in Shaun's videos.
 - The syntax for the Firebase Cloud Functions works without any changes
+- I moved all inline styles from the HTML file to the styles.css file
+
+# How to use
+1. Clone the repo
+2. Run `npm i` in the repo's root
+3. Make sure you have Firebase initialized for your purposes
+4. Add your Firebase credentials to the `firebase.js`
+   
 
 Thanks to [iamshaunjp](https://github.com/iamshaunjp) for all his dedicated work.
 
