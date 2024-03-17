@@ -27,12 +27,12 @@ import { setupGuides, setupUI } from './index.js';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_APIKEY,
-  authDomain: import.meta.env.VITE_AUTHDOMAIN,
-  projectId: import.meta.env.VITE_PROJECTID,
-  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
-  appId: import.meta.env.VITE_APPID,
+  apiKey: 'AIzaSyADEHIFHlHLYHQzWyuGr554YoVQtV9QlrI',
+  authDomain: 'netninja-auth-2dccc.firebaseapp.com',
+  projectId: 'netninja-auth-2dccc',
+  storageBucket: 'netninja-auth-2dccc.appspot.com',
+  messagingSenderId: '24398713741',
+  appId: '1:24398713741:web:a24a57f88757ff85c8a3c4',
 };
 
 // Initialize Firebase
