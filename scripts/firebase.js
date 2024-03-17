@@ -22,11 +22,9 @@ import {
 
 import { setupGuides, setupUI } from './index.js';
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
+  // add your own Firebase credentials here.
   apiKey: 'AIzaSyADEHIFHlHLYHQzWyuGr554YoVQtV9QlrI',
   authDomain: 'netninja-auth-2dccc.firebaseapp.com',
   projectId: 'netninja-auth-2dccc',
