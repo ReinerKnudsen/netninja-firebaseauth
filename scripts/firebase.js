@@ -25,12 +25,12 @@ import { setupGuides, setupUI } from './index.js';
 // Your web app's Firebase configuration
 const firebaseConfig = {
   // add your own Firebase credentials here.
-  apiKey: 'AIzaSyADEHIFHlHLYHQzWyuGr554YoVQtV9QlrI',
-  authDomain: 'netninja-auth-2dccc.firebaseapp.com',
-  projectId: 'netninja-auth-2dccc',
-  storageBucket: 'netninja-auth-2dccc.appspot.com',
-  messagingSenderId: '24398713741',
-  appId: '1:24398713741:web:a24a57f88757ff85c8a3c4',
+  apiKey: '',
+  authDomain: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
 };
 
 // Initialize Firebase
