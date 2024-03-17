@@ -124,7 +124,7 @@ signupForm.addEventListener('submit', (e) => {
       // This is different from Shaun's approach in the video
       // yet it is a working approach and I used it in other projects
 
-      // First we create a reference to the user document (the id still is cred.user.uid)
+      // First we create a reference to the user document (the user id still is cred.user.uid)
       // 'setDoc' will create a new document if it doesn't exist with the bio data
       const userDocRef = doc(collection(database, 'users'), cred.user.uid);
       return setDoc(userDocRef, {
@@ -135,6 +135,12 @@ signupForm.addEventListener('submit', (e) => {
       const modal = document.querySelector('#modal-signup');
       M.Modal.getInstance(modal).close();
       signupForm.reset();
+      // remove any error messages (see 'catch' phrase below)
+      signupForm.querySelector('.error').innerHTML = '';
+    })
+    // catch errors at signup (video 23)
+    .catch((err) => {
+      signupForm.querySelector('.error').innerHTML = err.message;
     });
 });
 
@@ -145,11 +151,18 @@ loginForm.addEventListener('submit', (e) => {
   const email = loginForm['login-email'].value;
   const password = loginForm['login-password'].value;
 
-  signInWithEmailAndPassword(auth, email, password).then((cred) => {
-    const modal = document.querySelector('#modal-login');
-    M.Modal.getInstance(modal).close();
-    loginForm.reset();
-  });
+  signInWithEmailAndPassword(auth, email, password)
+    .then((cred) => {
+      const modal = document.querySelector('#modal-login');
+      M.Modal.getInstance(modal).close();
+      // remove any error messages (see 'catch' phrase below)
+      loginForm.querySelector('.error').innerHTML = '';
+      loginForm.reset();
+    })
+    // catch errors at signup (video 23)
+    .catch((err) => {
+      loginForm.querySelector('.error').innerHTML = err.message;
+    });
 });
 
 // Logout user (video 6)
